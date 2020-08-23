@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Отчет №1</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Пользователь</th>
+			<th>Используемая форма</th>
+		</tr>
+		<tr th:each="user: ${users}">
+			<td th:text="${user.ssoid}" />
+			<td th:text="${user.formid}" />
+		</tr>
+	</table>
+</body>
+</html>

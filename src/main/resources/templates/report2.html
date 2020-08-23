@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Отчет №2</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Пользователь</th>
+			<th>Где остановился</th>
+		</tr>
+		<tr th:each="user: ${users}">
+			<td th:text="${user.ssoid}" />
+			<td th:text="${user.subtype}" />
+		</tr>
+	</table>
+</body>
+</html>
