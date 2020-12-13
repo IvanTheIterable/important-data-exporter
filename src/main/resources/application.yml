@@ -9,8 +9,8 @@ spring:
         generate_statistics: true
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/anydb
-    username: anyuser
-    password: anypassword
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
     
     driverClassName: org.postgresql.Driver  
